@@ -66,6 +66,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 break;
 
             case R.id.nav_logout:
+                startActivity(new Intent(DrawerActivity.this,Symptom.class));
                 Toast.makeText(DrawerActivity.this,"logout",Toast.LENGTH_SHORT).show();
                 break;
 
