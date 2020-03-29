@@ -71,4 +71,5 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+    int a = 8;
 }
