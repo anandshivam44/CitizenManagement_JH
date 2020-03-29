@@ -53,16 +53,20 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         switch(id)
         {
             case R.id.nav_account:
+
                 Toast.makeText(DrawerActivity.this,"account",Toast.LENGTH_SHORT).show();
 
                 break;
 
             case R.id.nav_setting:
                 Toast.makeText(DrawerActivity.this, "setting", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(DrawerActivity.this,Telephone.class));
+
 
                 break;
 
             case R.id.nav_logout:
+                startActivity(new Intent(DrawerActivity.this,Symptom.class));
                 Toast.makeText(DrawerActivity.this,"logout",Toast.LENGTH_SHORT).show();
                 break;
 
